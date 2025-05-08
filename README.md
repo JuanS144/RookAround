@@ -48,7 +48,7 @@
 
 ---
 
-## 🗂 Data Model
+## Data Model
 
 The system uses **Entity Framework Core** to manage:
 
@@ -61,7 +61,7 @@ The system uses **Entity Framework Core** to manage:
 
 ---
 
-## 🛠 Getting Started
+## Getting Started
 
 ### Prerequisites
 
