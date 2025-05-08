@@ -1,0 +1,53 @@
+<!-- filepath: c:\Users\Jseb1\OneDrive\Escritorio\dawson\programming\project\rookaround\RookAroundUI\Views\LoginView.axaml -->
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:RookAroundProject.UI.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+             x:Class="RookAroundProject.UI.Views.LoginView"
+             x:DataType="vm:LoginViewModel">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" 
+          ColumnDefinitions="Auto,*"
+          HorizontalAlignment="Center" 
+          VerticalAlignment="Center"
+          Margin="20">
+        
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                   Text="RookAround Chess Tournament Login"
+                   FontSize="18" FontWeight="Bold" 
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Username field -->
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Username:" Margin="0,0,10,5" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Username}" Width="200" Margin="0,0,0,10"/>
+        
+        <!-- Password field -->
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Password:" Margin="0,0,10,5" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Password}" PasswordChar="*" Width="200" Margin="0,0,0,20"/>
+        
+        <!-- Login button -->
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" 
+                Content="Login" 
+                Command="{Binding LoginCommand}"
+                HorizontalAlignment="Center"
+                Width="120" Margin="0,0,0,10"/>
+        
+        <!-- Register link -->
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" 
+                Content="Register New Account" 
+                Command="{Binding RegisterCommand}"
+                HorizontalAlignment="Center"
+                Width="200" Margin="0,0,0,10"/>
+
+        <!-- Error message -->
+        <TextBlock Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                   Text="{Binding ErrorMessage}"
+                   IsVisible="{Binding HasError}"
+                   Foreground="Red"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,0"/>
+    </Grid>
+</UserControl>

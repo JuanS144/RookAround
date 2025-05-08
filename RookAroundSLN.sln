@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RookAround", "RookAroundProject\RookAround.csproj", "{CD984839-0C37-491F-B144-97D7E25EFC72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RookAroundTests", "RookAroundTests\RookAroundTests.csproj", "{A8EF8D63-EA28-483E-80DE-3B69B0454DAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD984839-0C37-491F-B144-97D7E25EFC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD984839-0C37-491F-B144-97D7E25EFC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD984839-0C37-491F-B144-97D7E25EFC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD984839-0C37-491F-B144-97D7E25EFC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EF8D63-EA28-483E-80DE-3B69B0454DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EF8D63-EA28-483E-80DE-3B69B0454DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EF8D63-EA28-483E-80DE-3B69B0454DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EF8D63-EA28-483E-80DE-3B69B0454DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
