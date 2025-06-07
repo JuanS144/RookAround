@@ -1,13 +1,13 @@
 # ♟️ RookAround — Chess Tournament Management System
 
-(In Progress...) **RookAround** is a comprehensive chess tournament management system built with **C#**, **Entity Framework Core**, and **Avalonia**. It enables tournament organizers to efficiently manage players, venues, resources, and various match styles with a flexible and scalable architecture.
+**RookAround** is a comprehensive chess tournament management system built with **C#**, **Entity Framework Core**, and **Avalonia**. It enables tournament organizers to manage players, venues, resources, and various match styles with a scalable architecture.
 
 ---
 
 ## Features
 
 - **Tournament Management**  
-  Create, edit, and delete tournaments with custom start/end dates
+  Create, edit, and delete tournaments with custom start/end dates, sizes and matches
 
 - **Resource Tracking**  
   Manage and allocate tables, chairs, chess boards, and other resources
@@ -19,7 +19,7 @@
   Book and manage venues with availability and capacity constraints
 
 - **Match Composition**  
-  Create different match types (e.g., regular, duck chess, GM vs player) using the **corator Pattern**- **Data Persistence**  
+  Create different match types (e.g., regular, duck chess, GM vs player) using the **decorator Pattern**- **Data Persistence**  
   Store and load data via **PostgreSQL** or local **JSON** files
 
 ---
